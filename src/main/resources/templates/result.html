@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>Title</title>
+</head>
+<body bgcolor="#0000ff" text="#ffffff">
+<div class="container">
+    <table class="table" th:object="${resultForm}">
+        <tr>
+            <th>
+                ユーザーID
+            </th>
+            <td th:text="*{userId}">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                ユーザー名
+            </th>
+            <td th:text="*{userName}">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                メールアドレス
+            </th>
+            <td th:text="*{emailAddress}">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                パスワード
+            </th>
+            <td th:text="*{password}">
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
